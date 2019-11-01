@@ -12,7 +12,7 @@ let topics = document.querySelector('.topics');
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response => {
-        console.log(response);
+        // console.log(response);
         let elements = response.data.topics.forEach(item => {
             topics.appendChild(tabComponent(item));
         })
