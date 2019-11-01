@@ -4,6 +4,11 @@
 // Stduy the response data you get back, closely.
 // You will be creating a component for each 'article' in the list.
 // This won't be as easy as just iterating over an array though.
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then(response => {
+        console.log(response);
+    })
 // Create a function that will programmatically create the following DOM component:
 //
 // <div class="card">
