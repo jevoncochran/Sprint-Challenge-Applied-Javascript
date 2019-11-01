@@ -8,7 +8,7 @@ let cardsCont = document.querySelector('.cards-container');
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
-        console.log(response);
+        // console.log(response);
         let bootstrap = response.data.articles.bootstrap;
         bootstrap.forEach(item => cardsCont.appendChild(cardCreator(item.authorName, item.authorPhoto, item.headline)));
         let javascript = response.data.articles.javascript;
